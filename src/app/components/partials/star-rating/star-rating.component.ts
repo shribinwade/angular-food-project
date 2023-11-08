@@ -22,7 +22,7 @@ export class StarRatingComponent {
     const previousHalf = current-0.5;
     const imageName =
     this.stars >= current ? 'star-full' :this.stars >= previousHalf ? 'star-half' :'star-empty'; 
-    return `/assets/images/${imageName}.svg`;
+    return `./assets/images/${imageName}.svg`;
   }
 
 }
