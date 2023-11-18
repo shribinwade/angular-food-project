@@ -5,7 +5,8 @@ import { FoodPageComponent } from './food-page/food-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 const routes: Routes = [
 
-  {path:'', component:FoodPageComponent},
+  {path:'FoodMenu', component:FoodPageComponent},
+  {path:'',redirectTo:'FoodMenu',pathMatch:'full'},
   {path:'search/:searchTerm', component:HomeComponent},
   {path:'tag/:tag',component:HomeComponent},
   {path:'food/:id',component:FoodPageComponent},
